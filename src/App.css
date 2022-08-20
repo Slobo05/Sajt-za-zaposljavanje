@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --linear: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+.nav{
+  width: 100%;
+  height: 75px;
+  background-image: var(--linear);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0.5;
+  list-style: none;
+}
+.ikona svg{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: black;
+}
+ul a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+.home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home h1{
+  text-align: center;
+  font-size: 5rem;
+  background-image: var(--linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.home p{
+  text-align: center;
+  font-size: 1.7rem;
+}
+.radnici{
+  overflow: hidden;
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radnik{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: grab;
+}
+.karta{
+  min-width: 200px;
+  min-height: 300px;
+  border: 4px solid #0093E9;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.karta h1{
+  font-size: 1.3rem;
+}
+.karta p{
+  font-size: 1rem;
+}
+.karta svg{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.onama img{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  float: left;
+}
+.onama h3{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
+}
+.load{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kontakti{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kartaK{
+  width: 250px;
+  height: 400px;
+  border: 4px solid #0093E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kartaK h1{
+  text-align: center;
+}
+.kartaK .insta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.kartaK .facebook{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+.kartaK .tvit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.kartaK .insta .ikona{
+  margin-right: 10px;
+  color: rgb(255, 124, 146);
+  font-size: 1.3rem;
+}
+.kartaK .facebook .ikona{
+  margin-right: 10px;
+  color: rgb(67, 67, 255);
+  font-size: 1.3rem;
+}
+.kartaK .tvit .ikona{
+  margin-right: 10px;
+  color: #0093E9;
+  font-size: 1.2rem;
+}
+.kartaK .osoba{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.radnik:active{
+  cursor: grabbing;
+}
